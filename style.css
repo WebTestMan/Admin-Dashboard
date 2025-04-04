@@ -1,0 +1,41 @@
+:root {
+    --primary-color: #359fd9;
+    --secondary-color: #f0b429;
+    --background-color: #e2e8f0;
+    --text-color: #000;
+    --text-color-light: #fff;
+    --font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: var(--background-color);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.header {
+    grid-area: 1/2/1/2;
+}
+
+.sidebar {
+    background-color: blue;
+    color: white;
+    grid-area: 2/1/1/1;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.dashboard {
+    grid-area: 2/2/3/3;
+}
