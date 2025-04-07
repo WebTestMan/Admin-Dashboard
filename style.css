@@ -71,11 +71,21 @@ header {
 
 .dashboard-right {
     display: flex;
+    flex-direction: column;
+}
+
+.announcements,
+.trending {
+    border: solid;
+}
+
+.announcements div {
+    border-bottom: dashed;
 }
 
 button {
-    padding: 4px 12px;
-    margin: 2px;
+    padding: 4px 14px;
+    margin: 4px;
     color: var(--text-color-light);
     background-color: var(--primary-color);
 }
