@@ -10,22 +10,24 @@
 
 <body>
     <div class="container">
-        <div class="header">
+
+        <header class="header">
             <div>
-                <div>Search Bar</div>
-                <div>User Pic</div>
+                <input type="text" placeholder="Search">
+            </div>
+            <div>User Pic</div>
+            <div>
+                <p>User UI</p>
             </div>
             <div>
-                <div>
-                    <p>User UI</p>
-                </div>
-                <div> <button>New</button></div>
-                <div> <button>Upload</button></div>
-                <div> <button>Share</button></div>
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
             </div>
-        </div>
+        </header>
+
         <div class="sidebar">
-            <h2>sidebar</h2>
+            <h2>Dashboard</h2>
             <ul>
                 <li>Home</li>
                 <li>Profile</li>
@@ -40,16 +42,54 @@
                 <li>Privacy</li>
             </ul>
         </div>
-        <div class="dashboard">dashboard
-            <p> Hello user...</p>
-            <div class="dashboard-grid">
-                <div>card</div>
-                <div>card</div>
-                <div>card</div>
-                <div>card</div>
-                <div>card</div>
-                <div>card</div>
+
+        <div class="dashboard">
+
+            <div class="dashboard-left">
+                <div>
+                    <p>Your Projects</p>
+                </div>
+                <div class="dashboard-grid">
+                    <div class="dashboard-card">
+                        <h3>Title</h3>
+                        <p>card content.. lorem ipsum...</p>
+                    </div>
+                    <div class="dashboard-card">
+                        <h3>Title</h3>
+                        <p>card content.. lorem ipsum...</p>
+                    </div>
+                    <div class="dashboard-card">
+                        <h3>Title</h3>
+                        <p>card content.. lorem ipsum...</p>
+                    </div>
+                    <div class="dashboard-card">
+                        <h3>Title</h3>
+                        <p>card content.. lorem ipsum...</p>
+                    </div>
+                    <div class="dashboard-card">
+                        <h3>Title</h3>
+                        <p>card content.. lorem ipsum...</p>
+                    </div>
+                    <div class="dashboard-card">
+                        <h3>Title</h3>
+                        <p>card content.. lorem ipsum...</p>
+                    </div>
+                </div>
             </div>
+
+            <div class="dashboard-right">
+                <div class="dashboard-side">
+                    <div>
+                        <h3>Announcements</h3>
+                        <div></div>
+                    </div>
+                    <div>
+                        <h3>Trending</h3>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
