@@ -65,8 +65,9 @@ header {
 
 .dashboard-grid {
     display: grid;
+    grid-template: repeat(3, auto) / 1fr 1fr;
     gap: 2px;
-    grid-template-columns: repeat(2, 1fr);
+
 }
 
 .dashboard-right {
