@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #359fd9;
-    --secondary-color: #f0b429;
+    --primary-color: #3f65ef;
+    --secondary-color: #f4dc2b;
     --background-color: #e2e8f0;
     --text-color: #000;
     --text-color-light: #fff;
@@ -13,9 +13,11 @@
     margin: 0;
     padding: 4px;
     box-sizing: border-box;
-    font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+    font-family: 'FreeUniversalRegular';
     font-weight: normal;
+    font-style: normal;
 }
+
 
 input,
 button {
@@ -28,8 +30,8 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 2fr 7fr;
+    grid-template-rows: 2fr 10fr;
 }
 
 header {
@@ -42,6 +44,10 @@ header {
     row-gap: 12px;
     padding: 4px;
     grid-area: 1/2/1/2;
+}
+
+ul {
+    list-style: none;
 }
 
 .header div {
@@ -66,7 +72,7 @@ header {
 .dashboard-grid {
     display: grid;
     grid-template: repeat(3, auto) / 1fr 1fr;
-    gap: 2px;
+    gap: 8px;
 
 }
 
@@ -77,7 +83,8 @@ header {
 
 .announcements,
 .trending {
-    border: solid;
+    border-radius: 8px;
+    background-color: white;
 }
 
 .announcements div {
@@ -93,7 +100,6 @@ button {
 
 .dashboard-card {
     border-radius: 8px;
-    border: solid;
     background-color: white;
-    border-left: 8px solid var(--card-side-border);
+    border-left: 8px solid var(--secondary-color);
 }
